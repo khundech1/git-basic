@@ -5,9 +5,17 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
 import { BoardsModule } from './boards/boards.module';
+import { ColumnsModule } from './columns/columns.module';
 
 @Module({
-  imports: [AuthModule, UsersModule, AuthModule, workspacesModule, BoardsModule],
+  imports: [
+    AuthModule,
+    UsersModule,
+    AuthModule,
+    workspacesModule,
+    BoardsModule,
+    ColumnsModule,
+  ],
 
   controllers: [AppController],
   providers: [AppService],
